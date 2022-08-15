@@ -23,4 +23,8 @@ contract TestERC20 is ERC20 {
             _burn(to, old - amount);
         }
     }
+
+    function mint(address _to, uint256 _amount) public {
+        _mint(_to, _amount);
+    }
 }
